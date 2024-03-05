@@ -6,31 +6,31 @@ slug: ''
 tags: pages
 seo:
   noindex: false
-  title: Sierretakeuil | Ville de Sierre
+  title: BAOBAB ENERGY Sàrl | Installation solaire photovoltaïque
   description: >-
-    Identifier ensemble les besoins, les attentes et les souhaits de la
-    population migrante de Sierre. Développer et mettre sur pied des projets
-    concrets en faveur de l’intégration. Encourager la participation des
-    communautés étrangères à la vie communale... en résumé, améliorer le "vivre
-    ensemble" au sein de la communauté sierroise.
-  og:title: Sierretakeuil | Ville de Sierre
+    Baobab Energy Sàrl vous offre son expertise dans l'installation de panneaux
+    solaires photovoltaïques. Fière de son ancrage local depuis 2017, elle
+    propose des solutions durables pour produire de l'énergie propre. Notre
+    équipe compétente gère l'installation pour clients privés et résidentiels,
+    de la demande de subventions à la mise en service, incluant bornes de
+    recharge pour véhicules électriques et systèmes d'optimisation énergétique.
+  og:title: BAOBAB ENERGY Sàrl | Installation solaire photovoltaïque
   additional_tags: >-
-    <meta content="Identifier ensemble les besoins, les attentes et les souhaits
-    de la population migrante de Sierre. Développer et mettre sur pied des
-    projets concrets en faveur de l’intégration. Encourager la participation des
-    communautés étrangères à la vie communale... en résumé, améliorer le
-    &quot;vivre ensemble&quot; au sein de la communauté sierroise."
-    property="og:description"><meta content="Identifier ensemble les besoins,
-    les attentes et les souhaits de la population migrante de Sierre. Développer
-    et mettre sur pied des projets concrets en faveur de l’intégration.
-    Encourager la participation des communautés étrangères à la vie communale...
-    en résumé, améliorer le &quot;vivre ensemble&quot; au sein de la communauté
-    sierroise." property="twitter:description"><meta
-    content="https://uploads-ssl.webflow.com/5d4d5feb574a78115ed7fbb9/65c1a302a0a0c5f27cc30ab6_opengraph.jpg"
-    property="twitter:image"><meta property="og:type" content="website">
-  og:image: >-
-    https://uploads-ssl.webflow.com/5d4d5feb574a78115ed7fbb9/65c1a302a0a0c5f27cc30ab6_opengraph.jpg
-  twitter:title: Sierretakeuil | Ville de Sierre
+    <meta content="Baobab Energy Sàrl vous offre son expertise dans
+    l'installation de panneaux solaires photovoltaïques. Fière de son ancrage
+    local depuis 2017, elle propose des solutions durables pour produire de
+    l'énergie propre. Notre équipe compétente gère l'installation pour clients
+    privés et résidentiels, de la demande de subventions à la mise en service,
+    incluant bornes de recharge pour véhicules électriques et systèmes
+    d'optimisation énergétique." property="og:description"><meta content="Baobab
+    Energy Sàrl vous offre son expertise dans l'installation de panneaux
+    solaires photovoltaïques. Fière de son ancrage local depuis 2017, elle
+    propose des solutions durables pour produire de l'énergie propre. Notre
+    équipe compétente gère l'installation pour clients privés et résidentiels,
+    de la demande de subventions à la mise en service, incluant bornes de
+    recharge pour véhicules électriques et systèmes d'optimisation énergétique."
+    property="twitter:description"><meta property="og:type" content="website">
+  twitter:title: BAOBAB ENERGY Sàrl | Installation solaire photovoltaïque
 ---
 
 
