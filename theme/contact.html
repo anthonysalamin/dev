@@ -1063,11 +1063,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector('[data-basin-form="true"]');
   if (!form) return;
   const successURL = `${targetURL()}/success/`;
+  console.log(successURL);
   observeFormDisplay(form, successURL);
 });
 function targetURL() {
   const currentURL = window.location.href;
-  const trimmedURL = currentURL.slice(0, currentURL.lastIndexOf('/'));
+  // const currentURL = "https://baobabenergy.webflow.io/contact/"; // test
+  function removeTrailingSlash(url) {
+    return url.endsWith("/") ? url.slice(0, -1) : url;
+  }
+  const cleanedURL = removeTrailingSlash(currentURL);
+  const trimmedURL = cleanedURL.slice(0, cleanedURL.lastIndexOf("/"));
   return trimmedURL;
 }
 function observeFormDisplay(form, successURL) {
