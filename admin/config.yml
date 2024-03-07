@@ -1934,22 +1934,16 @@ collections:
             label: Text
             name: 69ddd0
             widget: text
-          - hint: >-
-              Original text: Thank you ! I'll get back to you ASAP., key:
-              4a66c8ca
+          - hint: 'Original text: Merci !, key: -63f1b05f'
             label: Text
-            name: 4a66c8ca
+            name: '-63f1b05f'
             widget: string
           - hint: >-
-              Original text: Ooops, something went wrong. Please write me an
-              email to , key: 605db99e
+              Original text: Oups, quelque chose n'a pas bien fonctionné.
+              Contactez votre administrateur s'il vous plaît., key: 4f581760
             label: Text
-            name: 605db99e
-            widget: string
-          - hint: 'Original text: hello@anthonysalamin.ch, key: 29ff8bcf'
-            label: Text
-            name: 29ff8bcf
-            widget: string
+            name: 4f581760
+            widget: text
           - hint: 'Original text: L''entrepise, key: 4d75786e'
             label: Text
             name: 4d75786e
@@ -2074,13 +2068,6 @@ collections:
           - hint: 'Original link: #contact, key: 6c80469d'
             label: Link
             name: 6c80469d
-            widget: string
-          - hint: >-
-              Original link:
-              mailto:hello@anthonysalamin.ch?subject=Contact%20alternative, key:
-              332ecf61
-            label: Link
-            name: 332ecf61
             widget: string
           - hint: 'Original link: #entreprise, key: -3b125a02'
             label: Link

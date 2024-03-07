@@ -354,11 +354,10 @@
                   </div>
                 </form>
                 <div class="pitch__success w-form-done">
-                  <div>{{ texts.4a66c8ca }}</div>
+                  <div>{{ texts.-63f1b05f }}</div>
                 </div>
                 <div class="pitch__error w-form-fail">
-                  <div>{{ texts.605db99e }}<a href="{{ links.332ecf61 }}">{{ texts.29ff8bcf }}</a>
-                  </div>
+                  <div>{{ texts.4f581760 }}</div>
                 </div>
               </div>
               <div class="overlay-fade-bottom light"></div>
@@ -1063,11 +1062,13 @@ function initMap() {
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector('[data-basin-form="true"]');
   if (!form) return;
-  const successURL = `${getCurrentURL()}/success/`;
+  const successURL = `${targetURL()}/success/`;
   observeFormDisplay(form, successURL);
 });
-function getCurrentURL() {
-  return window.location.href;
+function targetURL() {
+  const currentURL = window.location.href;
+  const trimmedURL = currentURL.slice(0, currentURL.lastIndexOf('/'));
+  return trimmedURL;
 }
 function observeFormDisplay(form, successURL) {
   const observer = new MutationObserver((mutations) => {
