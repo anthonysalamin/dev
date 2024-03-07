@@ -1,8 +1,8 @@
 ---
-title: Big text scroll
+title: Big Claim
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/big-text-scroll.html
-slug: big-text-scroll
+layout: modules/big-claim.html
+slug: big-claim
 tags: pages
 seo:
   noindex: false

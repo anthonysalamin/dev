@@ -107,6 +107,55 @@ collections:
     editor: *ref_0
     folder: cms/pages/playground
     fields: *ref_1
+  - name: texts
+    label: Texts
+    folder: cms/texts
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - label: Content
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_number
+        label: Number
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: texts
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[texts].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_2
   - name: hero
     label: Heros
     folder: cms/hero
@@ -431,6 +480,23 @@ collections:
         widget: boolean
         required: false
         default: false
+      - hint: First image of the gallery MUST match the thumbnail image
+        name: f_gallery
+        label: Gallery
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -1038,6 +1104,10 @@ collections:
             label: Text
             name: '-68d80214'
             widget: string
+          - hint: 'Original text: Cookies, key: -64062591'
+            label: Text
+            name: '-64062591'
+            widget: string
           - hint: 'Original text: info@baobab.energy, key: 85d0ed1'
             label: Text
             name: 85d0ed1
@@ -1061,6 +1131,143 @@ collections:
           - hint: 'Original text: anthonysalamin.ch, key: -67104443'
             label: Text
             name: '-67104443'
+            widget: string
+          - hint: 'Original text: En cliquant sur , key: -5767796a'
+            label: Text
+            name: '-5767796a'
+            widget: string
+          - hint: 'Original text: "Accepter", key: 6af87d0b'
+            label: Text
+            name: 6af87d0b
+            widget: string
+          - hint: >-
+              Original text: , vous acceptez que tous les cookies soient stockés
+              sur votre appareil afin d'améliorer la navigation sur le site et
+              d'analyser l'utilisation du site. Voir notre rubrique , key:
+              -3036a795
+            label: Text
+            name: '-3036a795'
+            widget: text
+          - hint: 'Original text: Mention Légales, key: 1349d6ad'
+            label: Text
+            name: 1349d6ad
+            widget: string
+          - hint: 'Original text:  pour plus d''information., key: 196d8267'
+            label: Text
+            name: 196d8267
+            widget: string
+          - hint: 'Original text: Préferences, key: 4d4dc35c'
+            label: Text
+            name: 4d4dc35c
+            widget: string
+          - hint: 'Original text: Décliner, key: 6c6eede0'
+            label: Text
+            name: 6c6eede0
+            widget: string
+          - hint: 'Original text: Accepter, key: -7c16fc2b'
+            label: Text
+            name: '-7c16fc2b'
+            widget: string
+          - hint: >-
+              Original text: Centre de préférences de la politique de
+              confidentialité, key: -111e6df3
+            label: Text
+            name: '-111e6df3'
+            widget: string
+          - hint: >-
+              Original text: Lorsque vous visitez des sites Web, ils peuvent
+              stocker ou récupérer des données à partir de votre navigateur. Ce
+              stockage est souvent nécessaire pour les fonctionnalités de base
+              du site web. Elles peuvent être utilisées à des fins de marketing,
+              d'analyse et de personnalisation du site, par exemple pour
+              enregistrer vos préférences. La protection de votre vie privée est
+              importante pour nous, c'est pourquoi vous avez la possibilité de
+              désactiver certains types de stockage qui ne sont pas nécessaires
+              au fonctionnement de base du site web. Le blocage de certaines
+              catégories peut avoir un impact sur votre expérience du site Web.,
+              key: 70cf919b
+            label: Text
+            name: 70cf919b
+            widget: text
+          - hint: 'Original text: Refuser tous les cookies, key: -53dcc79c'
+            label: Text
+            name: '-53dcc79c'
+            widget: string
+          - hint: 'Original text: Accepter tous les cookies, key: -79c29fd3'
+            label: Text
+            name: '-79c29fd3'
+            widget: string
+          - hint: >-
+              Original text: Gérer les préférences de consentement par
+              catégorie, key: -7b73c3ad
+            label: Text
+            name: '-7b73c3ad'
+            widget: string
+          - hint: 'Original text: Essentiel, key: 16a393aa'
+            label: Text
+            name: 16a393aa
+            widget: string
+          - hint: 'Original text: Toujours actif, key: -5c954f1a'
+            label: Text
+            name: '-5c954f1a'
+            widget: string
+          - hint: >-
+              Original text: Ces éléments sont nécessaires au fonctionnement de
+              base du site web., key: -49e1473e
+            label: Text
+            name: '-49e1473e'
+            widget: string
+          - hint: 'Original text: Marketing, key: 3fc9ea06'
+            label: Text
+            name: 3fc9ea06
+            widget: string
+          - hint: 'Original text: Essential, key: 16a3932e'
+            label: Text
+            name: 16a3932e
+            widget: string
+          - hint: >-
+              Original text: Ces éléments sont utilisés pour diffuser des
+              publicités plus pertinentes pour vous et vos centres d'intérêt.
+              Ils peuvent également être utilisés pour limiter le nombre de fois
+              que vous voyez une publicité et pour mesurer l'efficacité des
+              campagnes publicitaires. Les réseaux publicitaires les placent
+              généralement avec l'autorisation de l'exploitant du site web.,
+              key: 981c690
+            label: Text
+            name: 981c690
+            widget: text
+          - hint: 'Original text: Personnalisation, key: 6fc5ea07'
+            label: Text
+            name: 6fc5ea07
+            widget: string
+          - hint: >-
+              Original text: Ces éléments permettent au site Web de se souvenir
+              des choix que vous faites (tels que votre nom d'utilisateur, votre
+              langue ou votre emplacement) et de fournir des fonctionnalités
+              améliorées et plus personnelles. Par exemple, un site Web peut
+              vous fournir des bulletins météorologiques locaux ou des
+              informations sur le trafic en stockant des données sur votre
+              position actuelle., key: -23c93b9d
+            label: Text
+            name: '-23c93b9d'
+            widget: text
+          - hint: 'Original text: Analyse, key: 2fb3f453'
+            label: Text
+            name: 2fb3f453
+            widget: string
+          - hint: >-
+              Original text: Ces éléments aident l'exploitant du site web à
+              comprendre le fonctionnement du site, comment les visiteurs
+              interagissent avec le site et s'il existe des problèmes
+              techniques. Ce type de stockage ne permet généralement pas de
+              collecter des informations permettant d'identifier un visiteur.,
+              key: -47cd94d2
+            label: Text
+            name: '-47cd94d2'
+            widget: text
+          - hint: 'Original text: Confirmer mes préférences et fermer, key: -c5b78c0'
+            label: Text
+            name: '-c5b78c0'
             widget: string
           - hint: 'Original text: Protected Page, key: -11d4bbff'
             label: Text
@@ -1602,21 +1809,146 @@ collections:
             label: Text
             name: 3e18a43e
             widget: string
+          - hint: 'Original text: Nous répondons à vos questions., key: -4cfe9760'
+            label: Text
+            name: '-4cfe9760'
+            widget: string
           - hint: >-
-              Original text: Transitionnez au solaire dès ajourd'hui., key:
-              69026e38
+              Original text: Remplissez le formulaire ci-dessous et nous
+              reprendrons contact avec vous ausitôt que possible afin de
+              répondre à votre requête., key: -5f85bb82
             label: Text
-            name: '69026e38'
-            widget: string
-          - hint: 'Original text: formulaire, key: 35030536'
-            label: Text
-            name: '35030536'
-            widget: string
+            name: '-5f85bb82'
+            widget: text
           - hint: >-
               Original text: Des solutions durables pour de l'énergie propre.,
               key: -13682841
             label: Text
             name: '-13682841'
+            widget: string
+          - hint: >-
+              Original text: Complétez ce formulaire et nous vous recontacterons
+              dans les meilleurs délais., key: -699766fc
+            label: Text
+            name: '-699766fc'
+            widget: string
+          - hint: >-
+              Original text: Quels services vous semblent les plus pertinents ?,
+              key: 1ded8988
+            label: Text
+            name: 1ded8988
+            widget: string
+          - hint: >-
+              Original text: Nous inspectons, si vous le souhaitez,
+              l'orientation de votre toit, sans aucun engagement de votre part.
+              La performance de nos installations est essentielle à nos yeux.,
+              key: -43d1bf4c
+            label: Text
+            name: '-43d1bf4c'
+            widget: text
+          - hint: 'Original text: Vérifier l''orientation de mon toit, key: 7e3ba828'
+            label: Text
+            name: 7e3ba828
+            widget: string
+          - hint: 'Original text: nouveau !, key: -43a3d1c8'
+            label: Text
+            name: '-43a3d1c8'
+            widget: string
+          - hint: >-
+              Original text: Avez-vous une date d'échéance approximative ?, key:
+              22d874b
+            label: Text
+            name: 22d874b
+            widget: string
+          - hint: 'Original text: ASAP, key: 1ecbe1'
+            label: Text
+            name: 1ecbe1
+            widget: string
+          - hint: 'Original text: 1 — 2 mois, key: -7e2035eb'
+            label: Text
+            name: '-7e2035eb'
+            widget: string
+          - hint: 'Original text: 2 — 4 mois, key: 7992ec72'
+            label: Text
+            name: 7992ec72
+            widget: string
+          - hint: 'Original text: Pas encore sûr, key: c99090'
+            label: Text
+            name: c99090
+            widget: string
+          - hint: >-
+              Original text: Comment devrions-nous commencer une conversation ?,
+              key: 535b5c98
+            label: Text
+            name: 535b5c98
+            widget: string
+          - hint: >-
+              Original text: Comment avez-vous entendu parlé de nous ?, key:
+              7b357999
+            label: Text
+            name: 7b357999
+            widget: string
+          - hint: 'Original text: Installation d''un voisin, key: -72fe5c3a'
+            label: Text
+            name: '-72fe5c3a'
+            widget: string
+          - hint: 'Original text: Recherche internet, key: 5b4747e6'
+            label: Text
+            name: 5b4747e6
+            widget: string
+          - hint: 'Original text: Réseaux sociaux, key: -63fc60a3'
+            label: Text
+            name: '-63fc60a3'
+            widget: string
+          - hint: 'Original text: Autre, key: 3cae8d3'
+            label: Text
+            name: 3cae8d3
+            widget: string
+          - hint: >-
+              Original text: Prêt à soumettre votre demande et à transitionner
+              au solaire ?, key: 508d0c1
+            label: Text
+            name: 508d0c1
+            widget: string
+          - hint: >-
+              Original text: Je reconnais avoir lu et consens à la , key:
+              -a76092c
+            label: Text
+            name: '-a76092c'
+            widget: string
+          - hint: 'Original text: politique de confidentialité, key: 6ad7d527'
+            label: Text
+            name: 6ad7d527
+            widget: string
+          - hint: 'Original text:  de baobab.energy, key: 535695a4'
+            label: Text
+            name: 535695a4
+            widget: string
+          - hint: >-
+              Original text: Chaque demande sera évaluée et une estimation de
+              coût détaillée sera fournie au client, sans engagement. En
+              utilisant notre formulaire de messagerie électronique, vous
+              reconnaissez et acceptez que les informations que vous soumettez
+              soient utilisées dans le but de traiter votre demande., key:
+              69ddd0
+            label: Text
+            name: 69ddd0
+            widget: text
+          - hint: >-
+              Original text: Thank you ! I'll get back to you ASAP., key:
+              4a66c8ca
+            label: Text
+            name: 4a66c8ca
+            widget: string
+          - hint: >-
+              Original text: Ooops, something went wrong. Please write me an
+              email to , key: 605db99e
+            label: Text
+            name: 605db99e
+            widget: string
+          - hint: 'Original text: hello@anthonysalamin.ch, key: 29ff8bcf'
+            label: Text
+            name: 29ff8bcf
             widget: string
           - hint: 'Original text: L''entrepise, key: 4d75786e'
             label: Text
@@ -1651,6 +1983,12 @@ collections:
             label: Text
             name: '-34d94ed0'
             widget: text
+          - hint: >-
+              Original text: Assurer la confiance et la responsabilité, key:
+              1b61c872
+            label: Text
+            name: 1b61c872
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -1699,6 +2037,10 @@ collections:
             label: Link
             name: '-68a9cb5e'
             widget: string
+          - hint: 'Original link: /mentions-legales/, key: -4560e6e3'
+            label: Link
+            name: '-4560e6e3'
+            widget: string
           - hint: >-
               Original link: mailto:info@baobab.energy?subject=Contact, key:
               2d4f8709
@@ -1721,11 +2063,16 @@ collections:
             label: Link
             name: '-385fdea1'
             widget: string
-          - hint: >-
-              Original link: mailto:info@quatreaplus.ch?subject=Contact, key:
-              -3bc1ed84
+          - hint: 'Original link: #contact, key: 6c80469d'
             label: Link
-            name: '-3bc1ed84'
+            name: 6c80469d
+            widget: string
+          - hint: >-
+              Original link:
+              mailto:hello@anthonysalamin.ch?subject=Contact%20alternative, key:
+              332ecf61
+            label: Link
+            name: 332ecf61
             widget: string
           - hint: 'Original link: #entreprise, key: -3b125a02'
             label: Link
@@ -2091,7 +2438,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 317f733b
+            name: '-1f8299d7'
             widget: object
             fields:
               - name: url

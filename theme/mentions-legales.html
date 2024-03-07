@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="65e58e48995ddd19c9c9f81e" data-wf-site="65d2e48ea556439a5996198e" lang="fr"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="65e97497a696f80b7712d4ba" data-wf-site="65d2e48ea556439a5996198e" lang="fr"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -182,7 +182,7 @@
                 </div>
                 <div class="nav__link-text">{{ texts.-2ed7c2bd }}</div>
               </a>
-              <a href="{{ links.16bdc13e }}" data-id="navbar-link" aria-current="page" class="nav__link accent w-inline-block w--current">
+              <a href="{{ links.16bdc13e }}" data-id="navbar-link" class="nav__link accent w-inline-block">
                 <div class="div-block">
                   <div class="embed-approve w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 64 64">
                       <g fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
@@ -205,174 +205,37 @@
         </div>
       </div>
     </nav>
-    <header class="hero-section">
-      <div class="hero-content-div">
-        <div class="subheader _20px-bottom-pad">{{ texts.-31243e2e }}</div>
-        <h1 class="heading-h1">{{ texts.-4cfe9760 }}</h1>
-        <p data-w-id="430b28b7-ae2c-aa4b-5295-e102042578af" style="opacity:0" class="p">{{ texts.-5f85bb82 }}</p>
-        <div class="spacer-20px"></div>
-        <div class="cta-wrap button-hero">
-          <a href="{{ links.6c80469d }}" class="cta border w-inline-block">
-            <div class="avatar__bg btn"><img src="{{ images.412143c2.url }}" loading="lazy" alt="{{ images.412143c2.alt | escape }}" class="avatar__img"></div>
-            <div class="cta__text">{{ texts.424189e1 }}</div>
-          </a>
-          <a href="{{ links.-d0333aa }}" class="cta secondary dark w-inline-block">
-            <div class="cta__text">{{ texts.-2ed7c2bd }}</div>
-          </a>
-        </div>
-        <div class="_50p-div"></div>
-      </div>
-      <div class="picture-tall"><img class="hero__image" src="{{ images.-3f38d5dc.url }}" width="1920" alt="{{ images.-3f38d5dc.alt | escape }}" sizes="100vw" loading="lazy">
-        <div class="load-block"></div>
-      </div>
-    </header>
     <main class="main">
-      <section id="quote" class="section qutote">
-        <div class="heading_wrap">
-          <h1 class="split-lines">{{ texts.-13682841 }}</h1>
-        </div>
-      </section>
-      <section id="contact" class="section-timeline timeline">
-        <div class="timeline__heading light">
-          <div class="timeline__container">
-            <div class="timeline__padding-vertical">
-              <div class="timeline-main_heading-wrapper">
-                <p class="heading-h1">{{ texts.-699766fc }}</p>
+      <div class="section-3 legal">
+        <div class="container-2">
+          <div class="w-layout-grid testimonials-2">
+            <div id="w-node-_74554fe7-755d-9f8a-3e65-5398c8abab4c-7712d4ba" class="testimonials__intro">
+              <div class="punchline-subline-wrap">
+                <p class="h2">{{ texts.1b61c872 }}</p>
+              </div>
+            </div>
+            <div class="testimonials__quotes">
+              {%- assign collection = collections.texts | filter: "f_number,eq,1", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-2 w-dyn-list">
+                {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
+                  {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+                    <div class="rich-text-block w-richtext">{{ item.templateContent | markdown }}</div>
+                  </div>{%- endfor -%}
+                </div>{%- endunless -%}
+                {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+                  <div>{{ texts.3d503d2b }}</div>
+                </div>{%- endif -%}
               </div>
             </div>
           </div>
         </div>
-        <div class="timeline__content light">
-          <div class="timeline__container">
-            <div class="timeline_component">
-              <div class="timeline_progress light">
-                <div class="timeline_progress-bar"></div>
-              </div>
-              <div class="overlay-fade-top light"></div>
-              <div class="pitch__form-block w-form">
-                <form method="post" name="wf-form-Formulaire" data-name="ulaire" action="https://usebasin.com/f/dabcbeb74411" data-basin-success-action="redirect" id="wf-form-Formulaire" data-basin-form="true" class="pitch__form" data-wf-page-id="65e58e48995ddd19c9c9f81e" data-wf-element-id="e23450db-1757-68ca-ceba-cca49ef268c8" data-ajax="true">
-                  <div class="gotcha w-embed"><input type="hidden" name="_gotcha"></div>
-                  <div class="timeline__item">
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef268df-c9c9f81e" class="timeline__left">
-                      <div class="h2 sticky">{{ texts.1ded8988 }}</div>
-                    </div>
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef268e2-c9c9f81e" class="timeline__centre">
-                      <div class="timeline__circle light"></div>
-                    </div>
-                    <div class="timeline__right">
-                      <div class="margin-bottom-medium">
-                        <div class="pitch__input-wrap light">
-                          <div class="timeline_text">{{ texts.-43d1bf4c }}<br></div>
-                          <div class="selection-wrap"><label class="w-checkbox selection__field">
-                              <div class="w-checkbox-input w-checkbox-input--inputType-custom selection__circle w--redirected-checked"></div><input type="checkbox" name="Orientation" id="verification-orientation" data-name="Orientation" style="opacity:0;position:absolute;z-index:-1" checked=""><span class="selection__text w-form-label" for="Orientation"><strong>{{ texts.7e3ba828 }}</strong></span>
-                              <div class="pill-mini margin-left">{{ texts.-43a3d1c8 }}</div>
-                            </label><label class="w-checkbox selection__field">
-                              <div class="w-checkbox-input w-checkbox-input--inputType-custom selection__circle"></div><input type="checkbox" name="Installation-photovoltaique" id="installation-photovoltaique" data-name="Installation photovoltaique" style="opacity:0;position:absolute;z-index:-1"><span class="selection__text w-form-label" for="Installation-photovoltaique">{{ texts.-7675057a }}</span>
-                            </label><label class="w-checkbox selection__field">
-                              <div class="w-checkbox-input w-checkbox-input--inputType-custom selection__circle"></div><input type="checkbox" name="Borne-de-charge" id="borne-de-charge" data-name="Borne de charge" style="opacity:0;position:absolute;z-index:-1"><span class="selection__text w-form-label" for="Borne-de-charge">{{ texts.c9ceed8 }}</span>
-                            </label><label class="w-checkbox selection__field">
-                              <div class="w-checkbox-input w-checkbox-input--inputType-custom selection__circle"></div><input type="checkbox" name="Systeme-optimisation" id="systeme-optimisation" data-name="Systeme optimisation" style="opacity:0;position:absolute;z-index:-1"><span class="selection__text w-form-label" for="Systeme-optimisation">{{ texts.-751526ae }}</span>
-                            </label><label class="w-checkbox selection__field">
-                              <div class="w-checkbox-input w-checkbox-input--inputType-custom selection__circle"></div><input type="checkbox" name="Contracting-location-voiture" id="contracting-location-voiture" data-name="Contracting location voiture" style="opacity:0;position:absolute;z-index:-1"><span class="selection__text w-form-label" for="Contracting-location-voiture">{{ texts.1e5af3ae }}</span>
-                            </label></div><img src="{{ images.-3f38d5dc.url }}" loading="lazy" sizes="(max-width: 479px) 13vw, (max-width: 991px) 39vw, 36vw" alt="{{ images.-3f38d5dc.alt | escape }}" class="img-timeline">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="timeline__item light">
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef2692e-c9c9f81e" class="timeline__left">
-                      <div class="h2 sticky">{{ texts.22d874b }}</div>
-                    </div>
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef26931-c9c9f81e" class="timeline__centre">
-                      <div class="timeline__circle light"></div>
-                    </div>
-                    <div class="timeline__right">
-                      <div class="margin-bottom-medium">
-                        <div class="pitch__input-wrap light">
-                          <div class="selection-wrap"><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Deadline" id="asap" data-name="Deadline" style="opacity:0;position:absolute;z-index:-1" value="ASAP"><span class="selection__text w-form-label" for="asap">{{ texts.1ecbe1 }}</span>
-                            </label><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Deadline" id="1-2-mois" data-name="Deadline" style="opacity:0;position:absolute;z-index:-1" value="1 — 2 mois"><span class="selection__text w-form-label" for="1-2-mois">{{ texts.-7e2035eb }}</span>
-                            </label><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Deadline" id="2-4-mois" data-name="Deadline" style="opacity:0;position:absolute;z-index:-1" value="2 — 4 mois"><span class="selection__text w-form-label" for="2-4-mois">{{ texts.7992ec72 }}</span>
-                            </label><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Deadline" id="pas-sur" data-name="Deadline" style="opacity:0;position:absolute;z-index:-1" value="Pas sur"><span class="selection__text w-form-label" for="pas-sur">{{ texts.c99090 }}</span>
-                            </label></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="timeline__item light">
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef26948-c9c9f81e" class="timeline__left">
-                      <div class="h2 sticky">{{ texts.535b5c98 }}</div>
-                    </div>
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef2694b-c9c9f81e" class="timeline__centre">
-                      <div class="timeline__circle light"></div>
-                    </div>
-                    <div class="timeline__right">
-                      <div class="margin-bottom-medium"><input class="pitch__input w-input" maxlength="256" name="Nom" data-name="Nom" placeholder="Votre Nom et Prénom" type="text" id="nom" required=""><input class="pitch__input w-input" maxlength="256" name="email" data-name="Email" placeholder="Votre addresse Email" type="email" id="email" required=""><textarea id="message" name="message" maxlength="5000" data-name="Message" placeholder="Fournissez autant de détails que possible sur votre question/ projet." class="pitch__input textarea w-input"></textarea></div>
-                    </div>
-                  </div>
-                  <div class="timeline__item light">
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef26953-c9c9f81e" class="timeline__left">
-                      <div class="h2 sticky">{{ texts.7b357999 }}</div>
-                    </div>
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef26956-c9c9f81e" class="timeline__centre">
-                      <div class="timeline__circle light"></div>
-                    </div>
-                    <div class="timeline__right">
-                      <div class="margin-bottom-medium">
-                        <div class="pitch__input-wrap light">
-                          <div class="selection-wrap"><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Origin" id="installation-d-un-voisin" data-name="Origin" style="opacity:0;position:absolute;z-index:-1" value="Installation d'un voisin"><span class="selection__text w-form-label" for="installation-d-un-voisin">{{ texts.-72fe5c3a }}</span>
-                            </label><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Origin" id="recherche-internet" data-name="Origin" style="opacity:0;position:absolute;z-index:-1" value="Recherche internet"><span class="selection__text w-form-label" for="recherche-internet">{{ texts.5b4747e6 }}</span>
-                            </label><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Origin" id="reseaux-sociaux" data-name="Origin" style="opacity:0;position:absolute;z-index:-1" value="Réseaux sociaux"><span class="selection__text w-form-label" for="reseaux-sociaux">{{ texts.-63fc60a3 }}</span>
-                            </label><label class="selection__field w-radio">
-                              <div class="w-form-formradioinput w-form-formradioinput--inputType-custom selection__circle w-radio-input"></div><input type="radio" name="Origin" id="autre" data-name="Origin" style="opacity:0;position:absolute;z-index:-1" value="Autre"><span class="selection__text w-form-label" for="autre">{{ texts.3cae8d3 }}</span>
-                            </label></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="timeline__item light">
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef26969-c9c9f81e" class="timeline__left">
-                      <div class="h2 sticky">{{ texts.508d0c1 }}</div>
-                    </div>
-                    <div id="w-node-e23450db-1757-68ca-ceba-cca49ef2696c-c9c9f81e" class="timeline__centre">
-                      <div class="timeline__circle light"></div>
-                    </div>
-                    <div class="timeline__right">
-                      <div class="margin-bottom-medium">
-                        <div class="selection-wrap"><label class="w-checkbox selection__field acknowledge">
-                            <div class="w-checkbox-input w-checkbox-input--inputType-custom selection__circle"></div><input type="checkbox" name="Acceptation-politique-de-confidentialit" id="acceptation" data-name="Acceptation politique de confidentialité" required="" style="opacity:0;position:absolute;z-index:-1"><span class="selection__text w-form-label" for="Acceptation-politique-de-confidentialit">{{ texts.-a76092c }}<a href="{{ links.23 }}" class="link-inbubble">{{ texts.6ad7d527 }}</a>{{ texts.535695a4 }}</span>
-                          </label><input type="submit" data-wait="Un instant..." class="submit-button w-button" value="Soumettre une demande"></div>
-                        <p class="uploader__legend">{{ texts.69ddd0 }}</p>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-                <div class="pitch__success w-form-done">
-                  <div>{{ texts.4a66c8ca }}</div>
-                </div>
-                <div class="pitch__error w-form-fail">
-                  <div>{{ texts.605db99e }}<a href="{{ links.332ecf61 }}">{{ texts.29ff8bcf }}</a>
-                  </div>
-                </div>
-              </div>
-              <div class="overlay-fade-bottom light"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
       <div class="section testimonial">
         <div class="container">
           <div class="w-layout-grid testimonials">
             <div id="w-node-_5bfdd34b-9b07-5dba-f1e6-82e22db05a31-2db05a2e" class="testimonials__intro">
               <div class="punchline-subline-wrap">
                 <h2 class="h2">{{ texts.6f0131eb }}</h2>
-                <a href="{{ links.16bdc13e }}" aria-current="page" class="btn text-only w-inline-block w--current">
+                <a href="{{ links.16bdc13e }}" class="btn text-only w-inline-block">
                   <div class="btn__text">{{ texts.-48bda494 }}</div>
                   <div class="btn__arrow w-embed"><svg width="100%" height="100%" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g stroke="currentColor" stroke-width="1.70833" stroke-linecap="round">
@@ -485,7 +348,7 @@
             <h1 class="get-in-touch-title">{{ texts.-1c3f214f }}</h1>
           </div>
           <div class="footer-right">
-            <a href="{{ links.16bdc13e }}" aria-current="page" class="btn-get-in-touch w-inline-block w--current"><img src="{{ images.199a44fd.url }}" loading="lazy" data-class="rotation" alt="{{ images.199a44fd.alt | escape }}" class="img-get-in-touch"></a>
+            <a href="{{ links.16bdc13e }}" class="btn-get-in-touch w-inline-block"><img src="{{ images.199a44fd.url }}" loading="lazy" data-class="rotation" alt="{{ images.199a44fd.alt | escape }}" class="img-get-in-touch"></a>
           </div>
         </div>
         <div class="footer-bottom">
@@ -497,7 +360,7 @@
               </a>
               <a href="{{ links.-7dd25446 }}" class="nav__link">{{ texts.22a2850a }}</a>
               <a href="{{ links.351ada65 }}" data-id="navbar-link" class="nav__link">{{ texts.613d8936 }}</a>
-              <a href="{{ links.-4560e6e3 }}" class="nav__link">{{ texts.-68d80214 }}</a>
+              <a href="{{ links.-4560e6e3 }}" aria-current="page" class="nav__link w--current">{{ texts.-68d80214 }}</a>
               <div class="nav__link">
                 <div fs-cc="manager" class="fs-cc-manager_component">
                   <div fs-cc="open-preferences">{{ texts.-64062591 }}</div>
@@ -580,7 +443,7 @@
         </div>
       </div>
       <div fs-cc="preferences" fs-cc-scroll="disable" class="fs-cc-prefs_component w-form">
-        <form id="cookie-preferences" name="wf-form-Cookie-Preferences" data-name="cookie_preferences" method="get" class="fs-cc-prefs_form" data-wf-page-id="65e58e48995ddd19c9c9f81e" data-wf-element-id="2bc627f9-bd06-1b6c-b708-6b1edddcdbdb" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded">
+        <form id="cookie-preferences" name="wf-form-Cookie-Preferences" data-name="cookie_preferences" method="get" class="fs-cc-prefs_form" data-wf-page-id="65e97497a696f80b7712d4ba" data-wf-element-id="2bc627f9-bd06-1b6c-b708-6b1edddcdbdb" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded">
           <div fs-cc="close" class="fs-cc-prefs_close">
             <div class="fs-cc-prefs_close-icon w-embed"><svg fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 16 24">
                 <path d="M9.414 8l4.293-4.293-1.414-1.414L8 6.586 3.707 2.293 2.293 3.707 6.586 8l-4.293 4.293 1.414 1.414L8 9.414l4.293 4.293 1.414-1.414L9.414 8z"></path>
