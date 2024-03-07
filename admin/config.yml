@@ -1989,6 +1989,14 @@ collections:
             label: Text
             name: 1b61c872
             widget: string
+          - hint: 'Original text: Merci ☀️, key: -1a3ec771'
+            label: Text
+            name: '-1a3ec771'
+            widget: string
+          - hint: "Original text: Nous vous remercions d'avoir soumis votre requête. Votre demande a été traitée avec succès et nous vous confirmons sa réception. Notre équipe s'engage à traiter votre demande dans les meilleurs délais. Nous vous recontacterons dès que possible pour fournir réponses à \_toutes vos questions. Merci de votre intérêt et de votre patience., key: 4c996bcb"
+            label: Text
+            name: 4c996bcb
+            widget: text
       - label: Links
         name: links
         file: cms/_data/links.json
