@@ -420,6 +420,12 @@ collections:
         label: Order
         widget: number
         required: false
+      - hint: Should the project NOT appear on the project/réalisation page ?
+        name: f_featured
+        label: Featured?
+        widget: boolean
+        required: false
+        default: false
       - hint: ''
         name: f_post-summary
         label: Location
@@ -474,12 +480,6 @@ collections:
             label: alt
             widget: string
             required: false
-      - hint: Should the project NOT appear on the project/réalisation page ?
-        name: f_featured
-        label: Featured?
-        widget: boolean
-        required: false
-        default: false
       - hint: First image of the gallery MUST match the thumbnail image
         name: f_gallery
         label: Gallery
@@ -853,9 +853,9 @@ collections:
             label: Text
             name: c9ceed8
             widget: string
-          - hint: 'Original text: 7,9K, key: 19acc7'
+          - hint: 'Original text: 1,6K, key: 16f230'
             label: Text
-            name: 19acc7
+            name: 16f230
             widget: string
           - hint: >-
               Original text: Système de stockage batterie pour l'auto
@@ -868,18 +868,18 @@ collections:
             name: 6d5
             widget: string
           - hint: >-
-              Original text: Contracting pour la location de votre toiture en
-              vue de l'installation photovoltaïque, key: -388fbfbe
+              Original text: entre 30 — 40% du prix est subventionné par des
+              subventions et autres avantages fiscaux, key: 549be087
             label: Text
-            name: '-388fbfbe'
+            name: 549be087
             widget: string
-          - hint: 'Original text: 190, key: bf08'
+          - hint: 'Original text: max, key: 1a564'
             label: Text
-            name: bf08
+            name: 1a564
             widget: string
-          - hint: 'Original text: CHF/mo, key: 766bddf0'
+          - hint: 'Original text: 40%, key: c929'
             label: Text
-            name: 766bddf0
+            name: c929
             widget: string
           - hint: >-
               Original text: Une sélection de nos dernières installations
@@ -887,9 +887,9 @@ collections:
             label: Text
             name: '-71f9d611'
             widget: string
-          - hint: 'Original text: Voir toutes nos réalisations, key: 538f8fb2'
+          - hint: 'Original text: Voir d''autres réalisations, key: -ba0add7'
             label: Text
-            name: 538f8fb2
+            name: '-ba0add7'
             widget: string
           - hint: >-
               Original text: Transformer la puissance du soleil en énergie
@@ -1038,6 +1038,10 @@ collections:
               photovoltaïques, key: 7dadd139
             label: Text
             name: 7dadd139
+            widget: string
+          - hint: 'Original text: Voir toutes nos réalisations, key: 538f8fb2'
+            label: Text
+            name: 538f8fb2
             widget: string
           - hint: >-
               Original text: Ce que nos clients disent de nos services, key:
@@ -1614,6 +1618,24 @@ collections:
             label: Text
             name: '-5286fc08'
             widget: text
+          - hint: 'Original text: 7,9K, key: 19acc7'
+            label: Text
+            name: 19acc7
+            widget: string
+          - hint: >-
+              Original text: Contracting pour la location de votre toiture en
+              vue de l'installation photovoltaïque, key: -388fbfbe
+            label: Text
+            name: '-388fbfbe'
+            widget: string
+          - hint: 'Original text: 190, key: bf08'
+            label: Text
+            name: bf08
+            widget: string
+          - hint: 'Original text: CHF/mo, key: 766bddf0'
+            label: Text
+            name: 766bddf0
+            widget: string
           - hint: 'Original text: Installation solaire, key: 3917a25'
             label: Text
             name: 3917a25
@@ -1625,10 +1647,6 @@ collections:
             label: Text
             name: 260b1f16
             widget: text
-          - hint: 'Original text: Quelques-un de nos partenaires, key: -35d2e37a'
-            label: Text
-            name: '-35d2e37a'
-            widget: string
           - hint: 'Original text: A — Z, key: 41af2ef'
             label: Text
             name: 41af2ef
@@ -1648,6 +1666,10 @@ collections:
           - hint: 'Original text: Highlight, key: 4ed7ac94'
             label: Text
             name: 4ed7ac94
+            widget: string
+          - hint: 'Original text: Quelques-un de nos partenaires, key: -35d2e37a'
+            label: Text
+            name: '-35d2e37a'
             widget: string
           - hint: >-
               Original text: Transitionnez au solaire, faites des économies,
@@ -2108,6 +2130,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: i1a16c6cd
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 295c6b03
             widget: object
             fields:
@@ -2420,7 +2455,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 78a77def
+            name: '-19fa97cb'
             widget: object
             fields:
               - name: url
