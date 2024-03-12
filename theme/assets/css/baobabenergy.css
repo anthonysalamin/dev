@@ -3440,6 +3440,10 @@ strong {
   position: relative;
 }
 
+.map__cl-wrapper {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   body {
     font-size: .87rem;

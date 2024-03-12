@@ -107,6 +107,46 @@ collections:
     editor: *ref_0
     folder: cms/pages/playground
     fields: *ref_1
+  - name: markers
+    label: Markers
+    folder: cms/markers
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: markers
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[markers].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_2
   - name: texts
     label: Texts
     folder: cms/texts
@@ -1034,14 +1074,16 @@ collections:
             name: '-794cfa54'
             widget: text
           - hint: >-
-              Original text: Un survol de nos installations solaires
-              photovoltaïques, key: 7dadd139
+              Original text: Présent dans + de 35 villages du valais centrale,
+              key: 505f9e1f
             label: Text
-            name: 7dadd139
+            name: 505f9e1f
             widget: string
-          - hint: 'Original text: Voir toutes nos réalisations, key: 538f8fb2'
+          - hint: >-
+              Original text: Voir une sélection de nos réalisations, key:
+              5731a8d
             label: Text
-            name: 538f8fb2
+            name: 5731a8d
             widget: string
           - hint: >-
               Original text: Ce que nos clients disent de nos services, key:
@@ -2013,6 +2055,10 @@ collections:
             label: Text
             name: 4c996bcb
             widget: text
+          - hint: 'Original text: Nous appeler, key: -b8ce1ac'
+            label: Text
+            name: '-b8ce1ac'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
