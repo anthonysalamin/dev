@@ -1403,10 +1403,10 @@ collections:
             name: '-6acb9365'
             widget: text
           - hint: >-
-              Original text: 100% des services réalisés en interne, zéro
-              sous-traitants., key: -eb3877b
+              Original text: 100% des services réalisés en interne, 0
+              sous-traitants., key: 26976425
             label: Text
-            name: '-eb3877b'
+            name: '26976425'
             widget: string
           - hint: >-
               Original text: Baobab Energy Sàrl propose son expertise en

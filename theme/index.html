@@ -1158,6 +1158,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--  GSAP 3.12.4 ScrollTrigger  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--  split-type  -->
+  <script src="https://unpkg.com/split-type"></script>
   <script>
 /*
  * BAOBAB | stagger reveal v1
@@ -1191,8 +1193,6 @@ function initRevealServices() {
   });
 } // end initRevealServices()
 </script>
-  <!--  split-type  -->
-  <script src="https://unpkg.com/split-type"></script>
   <script>
 /*
  * text reveal on scroll with GSAP
@@ -1282,40 +1282,6 @@ function initQuoteGSAP() {
   }
   createAnimation();
 } // end initQuoteGSAP()
-</script>
-  <script>
-/*
- * BAOBAB | simulateMegaWatt
- * dependency: gsap/3.12.5/gsap.min.js
- * build 14.02.2024 @16:00
- */
-document.addEventListener("DOMContentLoaded", simulateMegaWatt());
-function simulateMegaWatt() {
-  const config = {
-    target: "#mwh-counter",
-    min: 600.0301508,
-    max: 628.9999999,
-    step: 0.0000001,
-    decimal: 7,
-    duration: 0.001
-  };
-  if (!config.target) return;
-  let currentNumber = config.min;
-  const updateNumber = () => {
-    currentNumber =
-      currentNumber >= config.max ? config.min : currentNumber + config.step;
-    const roundedNumber = currentNumber.toFixed(config.decimal);
-    document.querySelector(config.target).textContent = roundedNumber;
-  };
-  gsap.to(
-    {},
-    {
-      duration: config.duration,
-      repeat: -1,
-      onRepeat: updateNumber
-    }
-  );
-} // simulateMegaWatt()
 </script>
   <script>
 /*
@@ -1728,6 +1694,40 @@ cmsItems.filter(":nth-child(odd)").each(function (index) {
     });
   });
 });
+</script>
+  <script>
+/*
+ * BAOBAB | simulateMegaWatt
+ * dependency: gsap/3.12.5/gsap.min.js
+ * build 14.02.2024 @16:00
+ */
+document.addEventListener("DOMContentLoaded", simulateMegaWatt());
+function simulateMegaWatt() {
+  const config = {
+    target: "#mwh-counter",
+    min: 600.0301508,
+    max: 628.9999999,
+    step: 0.0000001,
+    decimal: 7,
+    duration: 0.001
+  };
+  if (!config.target) return;
+  let currentNumber = config.min;
+  const updateNumber = () => {
+    currentNumber =
+      currentNumber >= config.max ? config.min : currentNumber + config.step;
+    const roundedNumber = currentNumber.toFixed(config.decimal);
+    document.querySelector(config.target).textContent = roundedNumber;
+  };
+  gsap.to(
+    {},
+    {
+      duration: config.duration,
+      repeat: -1,
+      onRepeat: updateNumber
+    }
+  );
+} // simulateMegaWatt()
 </script>
   <!-- 
 <script>
