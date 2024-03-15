@@ -1355,6 +1355,8 @@ strong {
 
 .blog-teaser-date {
   font-size: .8em;
+  display: block;
+  position: relative;
 }
 
 .blog-teaser-image-wrapper {

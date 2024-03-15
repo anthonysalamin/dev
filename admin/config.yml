@@ -296,6 +296,11 @@ collections:
         label: Published On
         widget: datetime
         required: false
+      - hint: Keep it as short as possible, one mini paragraph @max 123 characters
+        name: f_teaser-summary
+        label: Summary
+        widget: text
+        required: false
       - hint: DO NOT CHANGE
         name: f_order
         label: Order
@@ -347,10 +352,10 @@ collections:
             label: alt
             widget: string
             required: false
-      - hint: Keep it as short as possible, one mini paragraph @max 123 characters
-        name: f_teaser-summary
-        label: Summary
-        widget: text
+      - hint: ''
+        name: f_location-2
+        label: Location
+        widget: string
         required: false
       - label: Tags
         widget: hidden
