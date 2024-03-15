@@ -6,31 +6,45 @@ slug: ''
 tags: pages
 seo:
   noindex: false
-  title: BAOBAB ENERGY Sàrl | Installation solaire photovoltaïque
+  title: >-
+    BAOBAB ENERGY Sàrl | Spécialistes en Installation Solaire Photovoltaïque et
+    Bornes Électriques
   description: >-
-    Baobab Energy Sàrl vous offre son expertise dans l'installation de panneaux
-    solaires photovoltaïques. Fière de son ancrage local depuis 2017, elle
-    propose des solutions durables pour produire de l'énergie propre. Notre
-    équipe compétente gère l'installation pour clients privés et résidentiels,
-    de la demande de subventions à la mise en service, incluant bornes de
-    recharge pour véhicules électriques et systèmes d'optimisation énergétique.
-  og:title: BAOBAB ENERGY Sàrl | Installation solaire photovoltaïque
+    Baobab Energy Sàrl vous propose son expertise en matière d'installation de
+    panneaux solaires photovoltaïques. Forte de son engagement local depuis
+    2017, notre entreprise offre des solutions durables pour la production
+    d'énergie propre. Notre équipe compétente prend en charge l'ensemble du
+    processus, de la demande de subventions à la mise en service, en incluant
+    l'installation de bornes de recharge pour véhicules électriques et des
+    systèmes d'optimisation énergétique, aussi bien pour les particuliers que
+    pour les entreprises.
+  og:title: >-
+    BAOBAB ENERGY Sàrl | Spécialistes en Installation Solaire Photovoltaïque et
+    Bornes Électriques
   additional_tags: >-
-    <meta content="Baobab Energy Sàrl vous offre son expertise dans
-    l'installation de panneaux solaires photovoltaïques. Fière de son ancrage
-    local depuis 2017, elle propose des solutions durables pour produire de
-    l'énergie propre. Notre équipe compétente gère l'installation pour clients
-    privés et résidentiels, de la demande de subventions à la mise en service,
-    incluant bornes de recharge pour véhicules électriques et systèmes
-    d'optimisation énergétique." property="og:description"><meta content="Baobab
-    Energy Sàrl vous offre son expertise dans l'installation de panneaux
-    solaires photovoltaïques. Fière de son ancrage local depuis 2017, elle
-    propose des solutions durables pour produire de l'énergie propre. Notre
-    équipe compétente gère l'installation pour clients privés et résidentiels,
-    de la demande de subventions à la mise en service, incluant bornes de
-    recharge pour véhicules électriques et systèmes d'optimisation énergétique."
-    property="twitter:description"><meta property="og:type" content="website">
-  twitter:title: BAOBAB ENERGY Sàrl | Installation solaire photovoltaïque
+    <meta content="Baobab Energy Sàrl vous propose son expertise en matière
+    d'installation de panneaux solaires photovoltaïques. Forte de son engagement
+    local depuis 2017, notre entreprise offre des solutions durables pour la
+    production d'énergie propre. Notre équipe compétente prend en charge
+    l'ensemble du processus, de la demande de subventions à la mise en service,
+    en incluant l'installation de bornes de recharge pour véhicules électriques
+    et des systèmes d'optimisation énergétique, aussi bien pour les particuliers
+    que pour les entreprises." property="og:description"><meta content="Baobab
+    Energy Sàrl vous propose son expertise en matière d'installation de panneaux
+    solaires photovoltaïques. Forte de son engagement local depuis 2017, notre
+    entreprise offre des solutions durables pour la production d'énergie propre.
+    Notre équipe compétente prend en charge l'ensemble du processus, de la
+    demande de subventions à la mise en service, en incluant l'installation de
+    bornes de recharge pour véhicules électriques et des systèmes d'optimisation
+    énergétique, aussi bien pour les particuliers que pour les entreprises."
+    property="twitter:description"><meta
+    content="https://uploads-ssl.webflow.com/65d2e48ea556439a5996198e/65f3de54dff58082d4b1add2_opengraph.jpg"
+    property="twitter:image"><meta property="og:type" content="website">
+  og:image: >-
+    https://uploads-ssl.webflow.com/65d2e48ea556439a5996198e/65f3de54dff58082d4b1add2_opengraph.jpg
+  twitter:title: >-
+    BAOBAB ENERGY Sàrl | Spécialistes en Installation Solaire Photovoltaïque et
+    Bornes Électriques
 ---
 
 

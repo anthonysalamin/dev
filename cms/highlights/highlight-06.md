@@ -8,10 +8,9 @@ f_thumbnail:
     https://uploads-ssl.webflow.com/65d2e48ea556439a599619b6/65d82ca02310178db5232c43_nax.jpg
   alt: null
 slug: highlight-06
-f_url-to-the-project: cms/realisations/realisation-6.md
-updated-on: '2024-03-11T08:36:53.533Z'
+updated-on: '2024-03-14T04:55:15.245Z'
 created-on: '2024-02-23T05:15:08.938Z'
-published-on: '2024-03-11T08:37:46.687Z'
+published-on: '2024-03-14T04:58:03.235Z'
 f_order: 6
 f_category-3: Solaire
 layout: '[highlights].html'

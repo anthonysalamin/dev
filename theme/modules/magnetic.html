@@ -14,6 +14,10 @@
   <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in" fs-cc-expires="180"></script>
   <!--  Fathom  -->
   <script src="https://cdn.usefathom.com/script.js" data-site="WQEVVCSW" defer=""></script>
+  <meta name="theme-color" content="#3ea3ff">
+  <meta name="twitter:site" content="@BAOBAB_ENERGY">
+  <meta name="twitter:description" content="Baobab Energy Sàrl vous propose son expertise en matière d'installation de panneaux solaires photovoltaïques.">
+  <meta name="twitter:image" content="https://uploads-ssl.webflow.com/65d2e48ea556439a5996198e/65f3de54dff58082d4b1add2_opengraph.jpg">
   <style>
   /* remove ugly focus + highlights */
   .svg-embed,
@@ -99,7 +103,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
 /*
- * BAOBAB | stagger reveal v1$
+ * BAOBAB | stagger reveal v1
  * build 28.02.24 @23:41
  */
 document.addEventListener("DOMContentLoaded", initRevealServices);
@@ -129,6 +133,132 @@ function initRevealServices() {
     });
   });
 } // end initRevealServices()
+</script>
+  <!--  split-type  -->
+  <script src="https://unpkg.com/split-type"></script>
+  <script>
+/*
+ * text reveal on scroll with GSAP
+ * dependency: https://unpkg.com/split-type
+ * build 19.10.23 @20:07
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const quote = document.querySelector("#quote");
+  if (!quote) return;
+  injectCSS(quote);
+  setTimeout(initQuoteGSAP, 100);
+});
+function getBackgroundColor(element) {
+  const computedStyle = window.getComputedStyle(element);
+  const backgroundColor = computedStyle.backgroundColor;
+  return backgroundColor;
+}
+function injectCSS(quote) {
+  console.log("injectCSS(quote)");
+  const color = getBackgroundColor(quote);
+  const styleElement = document.createElement("style");
+  styleElement.type = "text/css";
+  const cssRules = `
+  .line {
+  position: relative;
+  }
+  .line-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: ${color}; /* 👉🏻 same as section color */
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+`;
+  styleElement.textContent = cssRules;
+  document.head.appendChild(styleElement);
+}
+function initQuoteGSAP() {
+  console.log("initQuoteGSAP()");
+  const elementsToSplit = document.querySelectorAll(".split-lines");
+  const instancesOfSplit = [];
+  // Split the text up
+  function runSplit() {
+    elementsToSplit.forEach((element, index) => {
+      instancesOfSplit[index] = new SplitType(element, {
+        types: "lines, words"
+      });
+    });
+    document.querySelectorAll(".line").forEach((line) => {
+      const lineMask = document.createElement("div");
+      lineMask.classList.add("line-mask");
+      line.appendChild(lineMask);
+    });
+  }
+  runSplit();
+  // Update on window resize
+  let windowWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (windowWidth !== window.innerWidth) {
+      windowWidth = window.innerWidth;
+      elementsToSplit.forEach((element, index) => {
+        instancesOfSplit[index].revert();
+      });
+      runSplit();
+      createAnimation();
+    }
+  });
+  gsap.registerPlugin(ScrollTrigger);
+  function createAnimation() {
+    document.querySelectorAll(".line").forEach((line) => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: line,
+          start: "top center",
+          end: "bottom center",
+          scrub: 1
+        }
+      });
+      tl.to(line.querySelector(".line-mask"), {
+        width: "0%",
+        duration: 1
+      });
+    });
+  }
+  createAnimation();
+} // end initQuoteGSAP()
+</script>
+  <script>
+/*
+ * BAOBAB | simulateMegaWatt
+ * dependency: gsap/3.12.5/gsap.min.js
+ * build 14.02.2024 @16:00
+ */
+document.addEventListener("DOMContentLoaded", simulateMegaWatt());
+function simulateMegaWatt() {
+  const config = {
+    target: "#mwh-counter",
+    min: 600.0301508,
+    max: 628.9999999,
+    step: 0.0000001,
+    decimal: 7,
+    duration: 0.001
+  };
+  if (!config.target) return;
+  let currentNumber = config.min;
+  const updateNumber = () => {
+    currentNumber =
+      currentNumber >= config.max ? config.min : currentNumber + config.step;
+    const roundedNumber = currentNumber.toFixed(config.decimal);
+    document.querySelector(config.target).textContent = roundedNumber;
+  };
+  gsap.to(
+    {},
+    {
+      duration: config.duration,
+      repeat: -1,
+      onRepeat: updateNumber
+    }
+  );
+} // simulateMegaWatt()
 </script>
   <script>
 /*
@@ -482,7 +612,7 @@ function initMap() {
     map.fitBounds(latlngbounds);
     // adjust map zoom
     function adjustZoom() {
-      map.setZoom(map.getZoom() - 0.4);
+      map.setZoom(map.getZoom() + 0.5);
     }
     // adjust zoom on map ready
     google.maps.event.addListenerOnce(map, "idle", () => {

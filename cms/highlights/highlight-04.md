@@ -2,18 +2,17 @@
 f_category-3: Solaire
 f_order: 4
 f_teaser-summary: >-
-  Baobab Energy Sàrl rend les toits écologiques avec des panneaux solaires,
-  éclairant les maisons de façon durable.
+  Engagement éco-responsable: choix énergie solaire, vie durable, respect
+  environnement.
 title: Highlight 04
 slug: highlight-04
 f_thumbnail:
   url: >-
     https://uploads-ssl.webflow.com/65d2e48ea556439a599619b6/65d82c57de1232b7e63b12d1_champlan1.jpg
   alt: null
-f_url-to-the-project: cms/realisations/realisation-4.md
-updated-on: '2024-03-11T08:36:36.321Z'
+updated-on: '2024-03-14T04:51:34.814Z'
 created-on: '2024-02-23T07:45:08.126Z'
-published-on: '2024-03-11T08:37:46.687Z'
+published-on: '2024-03-14T04:58:03.235Z'
 layout: '[highlights].html'
 tags: highlights
 ---

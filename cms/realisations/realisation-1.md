@@ -1,12 +1,9 @@
 ---
-f_marker-lattitude: 46.2207789
-f_marker-longitude: 7.3466775
-f_map-description: BAOBAB ENERGY Sàrl
 title: Réalisation 1
 slug: realisation-1
-updated-on: '2024-03-11T08:23:04.465Z'
+updated-on: '2024-03-14T07:27:36.501Z'
 created-on: '2024-02-19T10:25:02.647Z'
-published-on: '2024-03-11T08:37:46.687Z'
+published-on: '2024-03-14T07:28:52.350Z'
 f_featured: true
 f_service: >-
   cms/services/installation-photovoltaique-pour-particuliers-ppe-entreprises-cle-en-main.md

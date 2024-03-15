@@ -1,12 +1,9 @@
 ---
-f_marker-lattitude: 46.2943163
-f_marker-longitude: 6.9943905
-f_map-description: BAOBAB ENERGY Sàrl
 title: Réalisation 9
 slug: realisation-9
-updated-on: '2024-03-11T08:29:25.326Z'
+updated-on: '2024-03-14T07:26:56.029Z'
 created-on: '2024-02-20T06:15:08.255Z'
-published-on: '2024-03-11T08:37:46.687Z'
+published-on: '2024-03-14T07:28:52.350Z'
 f_featured: false
 f_order: 9
 f_service: >-

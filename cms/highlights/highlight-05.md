@@ -8,10 +8,9 @@ f_thumbnail:
   url: >-
     https://uploads-ssl.webflow.com/65d2e48ea556439a599619b6/65d82c7dcb817db2bf69f0e3_grimisuat.jpg
   alt: null
-f_url-to-the-project: cms/realisations/realisation-5.md
-updated-on: '2024-03-11T08:36:46.983Z'
+updated-on: '2024-03-14T04:55:07.479Z'
 created-on: '2024-02-23T05:15:08.938Z'
-published-on: '2024-03-11T08:37:46.687Z'
+published-on: '2024-03-14T04:58:03.235Z'
 f_order: 5
 f_category-3: Solaire
 layout: '[highlights].html'

@@ -431,10 +431,6 @@ collections:
     extension: md
     slug: '{{slug}}'
     fields:
-      - label: Content
-        name: body
-        widget: markdown
-        required: false
       - hint: ''
         name: title
         label: Name
@@ -469,25 +465,6 @@ collections:
       - hint: ''
         name: f_post-summary
         label: Location
-        widget: text
-        required: false
-      - hint: >-
-          Please use this alttitude format extracted from from Google Maps:
-          00.0000000 
-        name: f_marker-lattitude
-        label: Marker lattitude
-        widget: number
-        required: false
-      - hint: >-
-          Please use this longitude format extracted from from Google Maps:
-          0.0000000
-        name: f_marker-longitude
-        label: Marker longitude
-        widget: number
-        required: false
-      - hint: ''
-        name: f_map-description
-        label: Marker mini description
         widget: text
         required: false
       - hint: ''
@@ -898,14 +875,14 @@ collections:
             name: 16f230
             widget: string
           - hint: >-
-              Original text: Système de stockage batterie pour l'auto
-              consommation et/ou le full backup, key: -41b8bdc
+              Original text: 100% des prestations sont réalisées en interne y
+              compris les échafaudages, zéro sous-traitants., key: 4887ce81
             label: Text
-            name: '-41b8bdc'
-            widget: string
-          - hint: 'Original text: 6K, key: 6d5'
+            name: 4887ce81
+            widget: text
+          - hint: 'Original text: 100%, key: 170054'
             label: Text
-            name: 6d5
+            name: '170054'
             widget: string
           - hint: >-
               Original text: entre 30 — 40% du prix est subventionné par des
@@ -913,13 +890,19 @@ collections:
             label: Text
             name: 549be087
             widget: string
-          - hint: 'Original text: max, key: 1a564'
+          - hint: 'Original text: jusqu''à, key: -4a7accbb'
             label: Text
-            name: 1a564
+            name: '-4a7accbb'
             widget: string
           - hint: 'Original text: 40%, key: c929'
             label: Text
             name: c929
+            widget: string
+          - hint: >-
+              Original text: Moins de 30m² de panneaux solaires suffisent pour
+              une famille de 5, key: -62df7d75
+            label: Text
+            name: '-62df7d75'
             widget: string
           - hint: >-
               Original text: Une sélection de nos dernières installations
@@ -948,6 +931,24 @@ collections:
           - hint: 'Original text: Nous suivre, key: 1e9b6083'
             label: Text
             name: 1e9b6083
+            widget: string
+          - hint: 'Original text: ~ , key: f62'
+            label: Text
+            name: f62
+            widget: string
+          - hint: 'Original text: 600.0301508, key: -dc475ff'
+            label: Text
+            name: '-dc475ff'
+            widget: string
+          - hint: 'Original text:  MWh, key: fb7de'
+            label: Text
+            name: fb7de
+            widget: string
+          - hint: >-
+              Original text: La production cumulée excède les 600 MWh, et elle
+              est en hausse..., key: 4fb7adc0
+            label: Text
+            name: 4fb7adc0
             widget: string
           - hint: >-
               Original text: Installation de panneaux photovoltaïques, un projet
@@ -1005,10 +1006,17 @@ collections:
             label: Text
             name: b41f2c2
             widget: text
-          - hint: 'Original text:  MWh, key: fb7de'
+          - hint: 'Original text: Bornes électriques, key: -12e0326d'
             label: Text
-            name: fb7de
+            name: '-12e0326d'
             widget: string
+          - hint: >-
+              Original text: BAOBAB ENERGY Sàrl contribue de manière
+              significative à l'infrastructure de transport durable en
+              installant des bornes électriques., key: 7d15fcda
+            label: Text
+            name: 7d15fcda
+            widget: text
           - hint: 'Original text: Énergie générée, key: -6ca2367e'
             label: Text
             name: '-6ca2367e'
@@ -1020,31 +1028,17 @@ collections:
             label: Text
             name: 69d0404b
             widget: text
-          - hint: 'Original text: Collaborateurs, key: 2e906074'
+          - hint: 'Original text: Certifications OIBT, key: -5e9993ad'
             label: Text
-            name: '2e906074'
+            name: '-5e9993ad'
             widget: string
           - hint: >-
-              Original text: Fiers de notre équipe collaborative : ingénieurs,
-              techniciens et chefs de projet pour mener à bien l'ensemble de nos
-              projets., key: -45d75d18
+              Original text: Contrôles périodiques garantissent la sécurité des
+              installations électriques, la certification immobilière et la
+              qualité du travail d'installateur., key: -2ff3e80b
             label: Text
-            name: '-45d75d18'
+            name: '-2ff3e80b'
             widget: text
-          - hint: 'Original text: K CHF, key: 430732c'
-            label: Text
-            name: 430732c
-            widget: string
-          - hint: 'Original text: Coût moyen, key: 47cdf285'
-            label: Text
-            name: 47cdf285
-            widget: string
-          - hint: >-
-              Original text: Coût moyen d'une installation solaire
-              photovoltaïque clé en main., key: 7d1e9bd5
-            label: Text
-            name: 7d1e9bd5
-            widget: string
           - hint: 'Original text:  CHF, key: f9061'
             label: Text
             name: f9061
@@ -1055,9 +1049,10 @@ collections:
             widget: string
           - hint: >-
               Original text: Prix moyen d'un plein pour votre voiture électrique
-              grâce à votre installation solaire photovoltaïque., key: 682dacea
+              grâce à votre installation solaire photovoltaïque BAOBAB ENERGY
+              Sàrl., key: 1e6b8640
             label: Text
-            name: 682dacea
+            name: 1e6b8640
             widget: text
           - hint: 'Original text:  ANS, key: f89a6'
             label: Text
@@ -1092,59 +1087,56 @@ collections:
             name: 6f0131eb
             widget: string
           - hint: >-
-              Original text: En plus de la réduction de notre facture
-              d'électricité, nous sommes satisfaits de pouvoir contribuer à un
-              environnement plus propre en utilisant une source d'énergie
-              infinie, notre soleil.”, key: -6c6d3bb8
+              Original text: Milton a été de très bon conseil pour le choix de
+              la borne et très transparent sur la qualité et le prix des
+              matériaux. Il est disponible et assure un bon suivi. Je recommande
+              ses services., key: 4db44ff0
             label: Text
-            name: '-6c6d3bb8'
+            name: 4db44ff0
             widget: text
-          - hint: 'Original text: Henry García, key: 1b230f27'
+          - hint: 'Original text: Angelo Mellone, key: -63238344'
             label: Text
-            name: 1b230f27
+            name: '-63238344'
             widget: string
-          - hint: 'Original text: Savièze, Valais, key: -478a4410'
+          - hint: 'Original text: Valais, Suisse, key: -3da27a64'
             label: Text
-            name: '-478a4410'
+            name: '-3da27a64'
             widget: string
           - hint: >-
-              Original text: Une décision qui a révolutionné ma consommation
-              énergétique. Grâce à BAOBAB ENERGY et leurs produits de qualité,
-              je suis désormais capable de produire ma propre électricité tout
-              en réalisant des économies sur mes factures mensuelles.”, key:
-              78328817
+              Original text: Vraiment très agréable et hautement professionnel,
+              d'une réactivité exceptionnelle. Je recommande vivement ! Bravo,
+              key: -53515a3a
             label: Text
-            name: '78328817'
+            name: '-53515a3a'
             widget: text
-          - hint: 'Original text: Priya Epiney, key: 71069d55'
+          - hint: 'Original text: Jean Moulin, key: 62443716'
             label: Text
-            name: 71069d55
-            widget: string
-          - hint: 'Original text: Fully, Valais, key: -4066ad38'
-            label: Text
-            name: '-4066ad38'
+            name: '62443716'
             widget: string
           - hint: >-
-              Original text: Le processus d'installation a été efficace et
-              l'équipe était professionnelle et compétente. Je recommande les
-              services de BAOBAB ENERGY à quiconque cherche à passer à l'énergie
-              solaire.”, key: -6965f4d3
+              Original text: Super travail super personne très professionnel
+              rapide et efficace tout ce quand aime je recommande à toute
+              personne ayant besoin d’une borne. 🤩🤩 …, key: 4b27beb
             label: Text
-            name: '-6965f4d3'
+            name: 4b27beb
             widget: text
-          - hint: 'Original text: Josseline Salamin, key: -5d04b69d'
+          - hint: 'Original text: Miguel Gomes, key: -9414b3c'
             label: Text
-            name: '-5d04b69d'
-            widget: string
-          - hint: 'Original text: Sion, Valais, key: 416b0af3'
-            label: Text
-            name: 416b0af3
+            name: '-9414b3c'
             widget: string
           - hint: >-
               Original text: Notre soleil, source infinie d'énergie, key:
               -1c3f214f
             label: Text
             name: '-1c3f214f'
+            widget: string
+          - hint: 'Original text: Valais Contrôle, key: -783fe13d'
+            label: Text
+            name: '-783fe13d'
+            widget: string
+          - hint: 'Original text: Gecko Échafaudages, key: 281de688'
+            label: Text
+            name: 281de688
             widget: string
           - hint: 'Original text: Mentions légales, key: -68d80214'
             label: Text
@@ -1187,12 +1179,11 @@ collections:
             name: 6af87d0b
             widget: string
           - hint: >-
-              Original text: , vous acceptez que tous les cookies soient stockés
-              sur votre appareil afin d'améliorer la navigation sur le site et
-              d'analyser l'utilisation du site. Voir notre rubrique , key:
-              -3036a795
+              Original text: , vous acceptez l'utilisation de "cookies" afin
+              d'améliorer votre navigation sur le site. Voir notre rubrique ,
+              key: 336a1058
             label: Text
-            name: '-3036a795'
+            name: 336a1058
             widget: text
           - hint: 'Original text: Mention Légales, key: 1349d6ad'
             label: Text
@@ -1351,39 +1342,9 @@ collections:
             label: Text
             name: 57bad849
             widget: string
-          - hint: 'Original text: BAOBAB ENERGY, key: -1c3bb2ab'
+          - hint: 'Original text: scroll, key: -361a1933'
             label: Text
-            name: '-1c3bb2ab'
-            widget: string
-          - hint: >-
-              Original text: Solutions durables pour une production énergetique
-              propre, key: 5df74e0b
-            label: Text
-            name: 5df74e0b
-            widget: string
-          - hint: 'Original text: Installation , key: -1c2266fa'
-            label: Text
-            name: '-1c2266fa'
-            widget: string
-          - hint: 'Original text: solaire photovolataïque, key: -43bf99b6'
-            label: Text
-            name: '-43bf99b6'
-            widget: string
-          - hint: >-
-              Original text:  pour clients privés et résidentiels — de la
-              demande de subventions à la mise en service, comprenant bornes de
-              recharge pour véhicules électriques et systèmes d'optimisation
-              énergétique., key: -257e5755
-            label: Text
-            name: '-257e5755'
-            widget: text
-          - hint: 'Original text: Devis gratuit, key: -20f70dff'
-            label: Text
-            name: '-20f70dff'
-            widget: string
-          - hint: 'Original text: Nos Prestations, key: -772a6f2c'
-            label: Text
-            name: '-772a6f2c'
+            name: '-361a1933'
             widget: string
           - hint: 'Original text: Participer à la transition, key: -3024727f'
             label: Text
@@ -1392,291 +1353,6 @@ collections:
           - hint: 'Original text: Nos experts vous répondent, key: 6960571b'
             label: Text
             name: 6960571b
-            widget: string
-          - hint: 'Original text: 3 raisons de passer au solaire ?, key: -38e2744d'
-            label: Text
-            name: '-38e2744d'
-            widget: string
-          - hint: 'Original text: Raisons de nous choisir, key: 5470fbb6'
-            label: Text
-            name: 5470fbb6
-            widget: string
-          - hint: 'Original text: Produire sa propre électricité, key: -675089b5'
-            label: Text
-            name: '-675089b5'
-            widget: string
-          - hint: >-
-              Original text: Avec nos solutions de panneaux solaires hautement
-              efficaces, vous réduisez votre dépendance aux sources d'énergie
-              traditionnelles., key: 7735175a
-            label: Text
-            name: 7735175a
-            widget: text
-          - hint: 'Original text: Alléger sa facture d''énergie, key: 2d098cac'
-            label: Text
-            name: 2d098cac
-            widget: string
-          - hint: >-
-              Original text: Le soleil constitue une source d'énergie
-              inépuisable. Choisissez l'énergie solaire dès maintenant et
-              réalisez des économies., key: 6fe4d0e0
-            label: Text
-            name: 6fe4d0e0
-            widget: text
-          - hint: >-
-              Original text: Participer à la transition énergétique, key:
-              49f52b99
-            label: Text
-            name: 49f52b99
-            widget: string
-          - hint: >-
-              Original text: Faites le choix durable et contribuez activement à
-              un avenir plus vert en investissant dans l'énergie solaire dès
-              aujourd'hui., key: 368e4e71
-            label: Text
-            name: 368e4e71
-            widget: text
-          - hint: 'Original text: Nos conseils et astuces énergétiques, key: -f33ae68'
-            label: Text
-            name: '-f33ae68'
-            widget: string
-          - hint: 'Original text: Lire d''avantage, key: -65867b00'
-            label: Text
-            name: '-65867b00'
-            widget: string
-          - hint: 'Original text: Géoréférencement de nos réalisations, key: 75b1152b'
-            label: Text
-            name: 75b1152b
-            widget: string
-          - hint: 'Original text: Voir tous nos projets, key: -70230ed0'
-            label: Text
-            name: '-70230ed0'
-            widget: string
-          - hint: 'Original text: Besoin de soleil ?, key: 4ca7f4da'
-            label: Text
-            name: 4ca7f4da
-            widget: string
-          - hint: >-
-              Original text: Adhérez notre newsletter pour rester informé(e) de
-              nos actualités et offres spéciales., key: 17771bfa
-            label: Text
-            name: 17771bfa
-            widget: string
-          - hint: >-
-              Original text: Thank you! Your submission has been received!, key:
-              5a0ea5a1
-            label: Text
-            name: 5a0ea5a1
-            widget: string
-          - hint: >-
-              Original text: Oops! Something went wrong while submitting the
-              form., key: -7c112e99
-            label: Text
-            name: '-7c112e99'
-            widget: string
-          - hint: >-
-              Original text: Installation solaire photovoltaïque ☀️, key:
-              -5971b50c
-            label: Text
-            name: '-5971b50c'
-            widget: string
-          - hint: 'Original text: Chemin des Bisses 9, key: -6ff04d56'
-            label: Text
-            name: '-6ff04d56'
-            widget: string
-          - hint: 'Original text: 1965 Savièse SUISSE, key: 752772be'
-            label: Text
-            name: 752772be
-            widget: string
-          - hint: 'Original text: Installation photovoltaïque, key: -7675057a'
-            label: Text
-            name: '-7675057a'
-            widget: string
-          - hint: 'Original text: Système de stockage batterie, key: 7f915647'
-            label: Text
-            name: 7f915647
-            widget: string
-          - hint: 'Original text: Borne de charge, key: 18030a2f'
-            label: Text
-            name: 18030a2f
-            widget: string
-          - hint: 'Original text: Système d''optimisation, key: -35cf33e2'
-            label: Text
-            name: '-35cf33e2'
-            widget: string
-          - hint: 'Original text: Contracting pour la location, key: -69ccce94'
-            label: Text
-            name: '-69ccce94'
-            widget: string
-          - hint: 'Original text: Contact, key: -64104400'
-            label: Text
-            name: '-64104400'
-            widget: string
-          - hint: >-
-              Original text: © 2024 BAOBAB ENERGY Sàrl — Tous droits réservés.,
-              key: -49cabe0c
-            label: Text
-            name: '-49cabe0c'
-            widget: string
-          - hint: >-
-              Original text: Installation solaire photovolatïque en Valais, key:
-              326056c2
-            label: Text
-            name: 326056c2
-            widget: string
-          - hint: >-
-              Original text: — de la demande de subventions à la mise en
-              service, comprenant bornes de recharge pour véhicules électriques
-              et systèmes d'optimisation énergétique., key: 5446320e
-            label: Text
-            name: 5446320e
-            widget: text
-          - hint: 'Original text: mon toit est-il bien orienté ?, key: -2dedd69d'
-            label: Text
-            name: '-2dedd69d'
-            widget: string
-          - hint: 'Original text: Some statistics, key: 3f20ebaf'
-            label: Text
-            name: 3f20ebaf
-            widget: string
-          - hint: 'Original text: of Muse AI, key: -4d54515b'
-            label: Text
-            name: '-4d54515b'
-            widget: string
-          - hint: >-
-              Original text: Last updated in July 2023 if not mentioned
-              otherwise., key: -328b144
-            label: Text
-            name: '-328b144'
-            widget: string
-          - hint: 'Original text: 1m+, key: c54f'
-            label: Text
-            name: c54f
-            widget: string
-          - hint: 'Original text: Chats processed, key: 4d54d969'
-            label: Text
-            name: 4d54d969
-            widget: string
-          - hint: >-
-              Original text: Over 1 Million Messages Processed – Witnessing a
-              rich and varied spectrum of interactions every day., key: 5bf24ab8
-            label: Text
-            name: 5bf24ab8
-            widget: text
-          - hint: 'Original text: 94%, key: dc6a'
-            label: Text
-            name: dc6a
-            widget: string
-          - hint: 'Original text: Customer satisfaction, key: 45fbe96e'
-            label: Text
-            name: 45fbe96e
-            widget: string
-          - hint: >-
-              Original text: Boasts a 4.8/5 Average User Rating – Testimony to
-              our superior service quality and user satisfaction., key: 40ef642f
-            label: Text
-            name: 40ef642f
-            widget: text
-          - hint: 'Original text: 50k+, key: 18d8fb'
-            label: Text
-            name: 18d8fb
-            widget: string
-          - hint: 'Original text: Active users, key: 7c6988e'
-            label: Text
-            name: 7c6988e
-            widget: string
-          - hint: >-
-              Original text: Facilitating more than 50,000 Active Users – A
-              rapidly growing user base trusting our AI for their
-              conversations., key: -19f26b9d
-            label: Text
-            name: '-19f26b9d'
-            widget: text
-          - hint: 'Original text: 50+, key: ccf0'
-            label: Text
-            name: ccf0
-            widget: string
-          - hint: 'Original text: Plugins on marketplace, key: 4338b62a'
-            label: Text
-            name: 4338b62a
-            widget: string
-          - hint: >-
-              Original text: Introduced more than 50 Plug-ins - Offering users
-              powerful tools to customize and enhance their chatbot experience.,
-              key: -65ba9d07
-            label: Text
-            name: '-65ba9d07'
-            widget: text
-          - hint: 'Original text: 120+, key: 1707dc'
-            label: Text
-            name: 1707dc
-            widget: string
-          - hint: 'Original text: Countries using Muse AI, key: 4b3a1bc6'
-            label: Text
-            name: 4b3a1bc6
-            widget: string
-          - hint: >-
-              Original text: Accessible in over 120 Countries – Making
-              AI-enabled chat experiences accessible around the globe., key:
-              -449796dc
-            label: Text
-            name: '-449796dc'
-            widget: text
-          - hint: 'Original text: 99.9%, key: 33dd89a'
-            label: Text
-            name: 33dd89a
-            widget: string
-          - hint: 'Original text: Guaranteed uptime, key: 1c07818c'
-            label: Text
-            name: 1c07818c
-            widget: string
-          - hint: >-
-              Original text: 99.9% Uptime Service – Ensuring dependable and
-              uninterrupted service for our users., key: 796c989b
-            label: Text
-            name: 796c989b
-            widget: string
-          - hint: 'Original text: scroll, key: -361a1933'
-            label: Text
-            name: '-361a1933'
-            widget: string
-          - hint: >-
-              Original text: This is some text inside of a div block., key:
-              7635fb4f
-            label: Text
-            name: 7635fb4f
-            widget: string
-          - hint: 'Original text: –, key: 2013'
-            label: Text
-            name: '2013'
-            widget: string
-          - hint: >-
-              Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Suspendisse varius enim in eros elementum tristique. Duis
-              cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-              commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-              tristique posuere., key: -5286fc08
-            label: Text
-            name: '-5286fc08'
-            widget: text
-          - hint: 'Original text: 7,9K, key: 19acc7'
-            label: Text
-            name: 19acc7
-            widget: string
-          - hint: >-
-              Original text: Contracting pour la location de votre toiture en
-              vue de l'installation photovoltaïque, key: -388fbfbe
-            label: Text
-            name: '-388fbfbe'
-            widget: string
-          - hint: 'Original text: 190, key: bf08'
-            label: Text
-            name: bf08
-            widget: string
-          - hint: 'Original text: CHF/mo, key: 766bddf0'
-            label: Text
-            name: 766bddf0
             widget: string
           - hint: 'Original text: Installation solaire, key: 3917a25'
             label: Text
@@ -1727,21 +1403,26 @@ collections:
             name: '-6acb9365'
             widget: text
           - hint: >-
+              Original text: 100% des services réalisés en interne, zéro
+              sous-traitants., key: -eb3877b
+            label: Text
+            name: '-eb3877b'
+            widget: string
+          - hint: >-
               Original text: Baobab Energy Sàrl propose son expertise en
               installation de panneaux solaires photovoltaïques, offrant des
-              solutions durables pour produire de l'énergie propre. Notre équipe
-              gère l'installation complète pour les clients privés et
-              résidentiels, de la demande de subventions à la mise en service,
-              incluant les bornes de recharge pour véhicules électriques et les
-              systèmes d'optimisation énergétique., key: 4fdaa7ef
+              solutions durables pour produire de l'énergie propre incluant
+              bornes de recharge pour véhicules électriques et systèmes
+              d'optimisation énergétique., key: -6f73714c
             label: Text
-            name: 4fdaa7ef
+            name: '-6f73714c'
             widget: text
           - hint: >-
-              Original text: Nous comprenons que chaque projet est différent et
-              que les exigences de chaque client sont uniques., key: -67c2f8dc
+              Original text: Notre équipe gère l'installation complète pour les
+              clients privés et résidentiels, de la demande de subventions à la
+              mise en service., key: 1e1ecb43
             label: Text
-            name: '-67c2f8dc'
+            name: 1e1ecb43
             widget: text
           - hint: 'Original text: contact, key: 38b72420'
             label: Text
@@ -1750,6 +1431,10 @@ collections:
           - hint: 'Original text: 01, key: 601'
             label: Text
             name: '601'
+            widget: string
+          - hint: 'Original text: Installation photovoltaïque, key: -7675057a'
+            label: Text
+            name: '-7675057a'
             widget: string
           - hint: >-
               Original text: Baobab Energy Sàrl est une entreprise spécialisée
@@ -1773,6 +1458,10 @@ collections:
           - hint: 'Original text: 02, key: 602'
             label: Text
             name: '602'
+            widget: string
+          - hint: 'Original text: Système de stockage batterie, key: 7f915647'
+            label: Text
+            name: 7f915647
             widget: string
           - hint: >-
               Original text: Baobab Energy Sàrl propose également des solutions
@@ -1869,10 +1558,42 @@ collections:
             label: Text
             name: 4d93ccfb
             widget: text
-          - hint: 'Original text: détails, key: 3e18a43e'
+          - hint: 'Original text: Certification et contrôle OIBT ✔️, key: 2072de07'
             label: Text
-            name: 3e18a43e
+            name: 2072de07
             widget: string
+          - hint: >-
+              Original text: Contrôle périodique : Vous êtes propriétaire et
+              l’exploitant réseau vous demande le rapport de sécurité de votre
+              installation électrique. Votre installation doit-être contrôlée
+              périodiquement tous les 1-5-10-20 ans cela dépend du genre
+              d'installation, key: -64eb56e1
+            label: Text
+            name: '-64eb56e1'
+            widget: text
+          - hint: >-
+              Original text: Contrôle quinquennal : Vous venez d'acquérir un
+              bien immobilier et cela fait plus de 5 ans qu'il n'a plus été
+              contrôlé. Votre installation doit être certifiée, key: -77ee9076
+            label: Text
+            name: '-77ee9076'
+            widget: text
+          - hint: >-
+              Original text: Contrôle final : Vous êtes installateur électricien
+              et vous voulez qu'une personne étrangère à l'entreprise contrôle
+              le travail effectué tout au long de la réalisation ainsi que les
+              dernières vérifications de sécurité, key: -4f5c6b4a
+            label: Text
+            name: '-4f5c6b4a'
+            widget: text
+          - hint: >-
+              Original text: Contrôle de réception : Vous avez une installation
+              qui demande un contrôle de réception. Ce deuxième contrôle se fait
+              sur la base du premier et sert à valider son contrôle final, key:
+              753c42e3
+            label: Text
+            name: 753c42e3
+            widget: text
           - hint: 'Original text: Nous répondons à vos questions., key: -4cfe9760'
             label: Text
             name: '-4cfe9760'
@@ -2012,6 +1733,17 @@ collections:
             label: Text
             name: 4d75786e
             widget: string
+          - hint: >-
+              Original text: Baobab Energy Sàrl propose son expertise en
+              installation de panneaux solaires photovoltaïques, offrant des
+              solutions durables pour produire de l'énergie propre. Notre équipe
+              gère l'installation complète pour les clients privés et
+              résidentiels, de la demande de subventions à la mise en service,
+              incluant les bornes de recharge pour véhicules électriques et les
+              systèmes d'optimisation énergétique., key: 4fdaa7ef
+            label: Text
+            name: 4fdaa7ef
+            widget: text
           - hint: 'Original text: Étude et Accompagnement, key: -2bddc1b8'
             label: Text
             name: '-2bddc1b8'
@@ -2107,6 +1839,14 @@ collections:
             label: Link
             name: '-68a9cb5e'
             widget: string
+          - hint: 'Original link: https://valais-controle.ch/, key: -6ec7b4a8'
+            label: Link
+            name: '-6ec7b4a8'
+            widget: string
+          - hint: 'Original link: https://gecko-echafaudages.ch/, key: 2a28d064'
+            label: Link
+            name: 2a28d064
+            widget: string
           - hint: 'Original link: /mentions-legales/, key: -4560e6e3'
             label: Link
             name: '-4560e6e3'
@@ -2120,10 +1860,6 @@ collections:
           - hint: 'Original link: https://anthonysalamin.ch/fr/, key: 59c9fc22'
             label: Link
             name: 59c9fc22
-            widget: string
-          - hint: 'Original link: tel:+41796091870, key: -3e31f68c'
-            label: Link
-            name: '-3e31f68c'
             widget: string
           - hint: 'Original link: #realisations, key: -112b16f7'
             label: Link
@@ -2140,6 +1876,10 @@ collections:
           - hint: 'Original link: #entreprise, key: -3b125a02'
             label: Link
             name: '-3b125a02'
+            widget: string
+          - hint: 'Original link: tel:+41796091870, key: -3e31f68c'
+            label: Link
+            name: '-3e31f68c'
             widget: string
       - label: Images
         name: images
@@ -2163,7 +1903,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 2781d9ed
+            name: i6594cc6c
             widget: object
             fields:
               - name: url
@@ -2176,33 +1916,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: i1a16c6cd
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 295c6b03
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: i76882ef0
+            name: i75dd4c1b
             widget: object
             fields:
               - name: url
@@ -2216,19 +1930,6 @@ collections:
                 required: false
           - label: Image
             name: eebf7c5
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 6fd331d6
             widget: object
             fields:
               - name: url
@@ -2371,45 +2072,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-505f91f2'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-4cf5e0b4'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-4eaab953'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 199a44fd
             widget: object
             fields:
@@ -2450,32 +2112,6 @@ collections:
                 required: false
           - label: Image
             name: 33b57081
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 33a75900
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-3aa60452'
             widget: object
             fields:
               - name: url
@@ -2619,6 +2255,32 @@ collections:
                 required: false
           - label: Image
             name: '-31929883'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-463df78'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2f755f48'
             widget: object
             fields:
               - name: url

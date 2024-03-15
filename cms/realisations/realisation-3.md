@@ -1,15 +1,13 @@
 ---
-f_marker-lattitude: 46.1648879
-f_marker-longitude: 7.1784536
-f_map-description: BAOBAB ENERGY Sàrl
 title: Réalisation 3
 slug: realisation-3
-updated-on: '2024-03-11T08:26:03.069Z'
+updated-on: '2024-03-14T07:27:42.167Z'
 created-on: '2024-02-19T09:56:44.833Z'
-published-on: '2024-03-11T08:37:46.687Z'
+published-on: '2024-03-14T07:28:52.350Z'
 f_featured: true
 f_order: 3
-f_service: cms/services/systeme-doptimisation-de-la-consommation-electrique.md
+f_service: >-
+  cms/services/installation-photovoltaique-pour-particuliers-ppe-entreprises-cle-en-main.md
 f_thumbnail-image:
   url: >-
     https://uploads-ssl.webflow.com/65d2e48ea556439a599619b6/65eebff73543df2a0ce57664_baobab-project-19_01.jpg
