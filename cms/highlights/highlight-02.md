@@ -10,7 +10,7 @@ f_thumbnail:
 slug: highlight-02
 updated-on: '2024-03-15T07:05:21.196Z'
 created-on: '2024-02-23T05:15:08.949Z'
-published-on: '2024-03-14T04:58:03.235Z'
+published-on: '2024-03-15T07:32:01.901Z'
 f_order: 2
 f_category-3: Solaire
 f_location-2: Réchy

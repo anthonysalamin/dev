@@ -10,7 +10,7 @@ f_thumbnail:
 slug: highlight-07
 updated-on: '2024-03-15T07:06:02.317Z'
 created-on: '2024-02-23T05:15:08.877Z'
-published-on: '2024-03-14T04:58:03.235Z'
+published-on: '2024-03-15T07:32:01.901Z'
 f_order: 7
 f_category-3: Solaire
 f_location-2: Noës

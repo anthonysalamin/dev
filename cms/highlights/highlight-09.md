@@ -10,7 +10,7 @@ f_thumbnail:
   alt: null
 updated-on: '2024-03-15T07:08:10.154Z'
 created-on: '2024-02-23T05:15:08.856Z'
-published-on: '2024-03-14T04:58:03.235Z'
+published-on: '2024-03-15T07:32:01.901Z'
 f_order: 9
 f_category-3: Solaire
 f_location-2: Valais
